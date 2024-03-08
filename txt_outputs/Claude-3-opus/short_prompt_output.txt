@@ -1,0 +1,20 @@
+1. Verify that the user can log in with valid credentials.
+2. Verify that the user cannot log in with invalid credentials.
+3. Verify that the user cannot log in with an empty username field.
+4. Verify that the user cannot log in with an empty password field.
+5. Verify that the user cannot log in with an empty username and password field.
+6. Verify that the password field masks the entered characters.
+7. Verify that the login button is enabled only when both username and password fields are filled.
+8. Verify that the user is redirected to the correct page upon successful login.
+9. Verify that the user remains on the login page upon failed login attempts.
+10. Verify that the error message is displayed for invalid login attempts.
+11. Verify that the error message is clear and informative.
+12. Verify that the user account gets locked after a specified number of failed login attempts.
+13. Verify that the password reset functionality works correctly.
+14. Verify that the "Remember Me" checkbox functionality works as expected.
+15. Verify that the user can log out successfully.
+16. Verify that the session expires after a specified period of inactivity.
+17. Verify that the login page is responsive and displays properly on different screen sizes.
+18. Verify that the login page is compatible with different browsers.
+19. Verify that the login page is secure and uses HTTPS protocol.
+20. Verify that the login page is protected against common security vulnerabilities, such as SQL injection and cross-site scripting (XSS).

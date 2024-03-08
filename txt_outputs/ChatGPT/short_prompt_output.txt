@@ -1,0 +1,20 @@
+Valid Login Test: Enter a valid email and password combination, expect successful login.
+Invalid Email Format Test: Enter an invalid email format and expect an error message.
+Empty Email Field Test: Leave the email field empty and try to log in, expect an error message.
+Empty Password Field Test: Leave the password field empty and try to log in, expect an error message.
+Empty Fields Test: Leave both fields empty and try to log in, expect an error message.
+SQL Injection Test: Enter SQL code into the fields to test for SQL injection vulnerabilities.
+Cross-Site Scripting Test: Insert a script tag to see if the page is vulnerable to XSS attacks.
+Invalid Email Test: Use an email that isn't registered/doesn't exist in the system.
+Invalid Password Test: Enter a valid email but an incorrect password and expect an error message.
+Maximum Length Test: Enter values that exceed the maximum allowed length for each field.
+Copy-Paste Functionality Test: Check if you can copy and paste into the email and password fields.
+Password Visibility Toggle Test: If there’s a feature to show/hide the password, ensure it works properly.
+Browser Back Button Test: Log in and then use the browser back button to see if it takes you back to a logged-in state or not.
+Forgot Password Link Test: Ensure that the "Forgot your password?" link navigates to the password recovery page.
+Create Account Link Test: Ensure that the "Create account" button navigates to the registration page.
+Session Timeout Test: Test if the session times out after a specific duration of inactivity after a successful login.
+Responsive Design Test: Ensure the login page displays correctly on different devices and resolutions.
+Login Attempt Limit Test: Ensure the account locks after a specified number of failed login attempts.
+Keyboard Navigation Test: Check if you can navigate and select fields using the keyboard only (tab, enter keys).
+Auto-Fill Test: Check if browser auto-fill works correctly and doesn't populate the password into the email field.

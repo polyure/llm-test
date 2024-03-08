@@ -1,0 +1,20 @@
+Verify the UI: Ensure all elements like email and password fields, sign in and create account buttons, and forgot password link are present.
+Email Input: Check if users can enter text into the email field.
+Password Input: Check if users can enter text into the password field.
+Email Validation: Verify that an error message is displayed if the user tries to log in without entering an email address.
+Password Validation: Verify that an error message is displayed if the user tries to log in without entering a password.
+Email Format: Verify that an error message is displayed for invalid email format (e.g., missing “@” or “.com”).
+Incorrect Credentials: Verify that users cannot log in with incorrect credentials; an appropriate error message should be shown.
+Character Limit: Check if there’s a limit to the number of characters allowed in both Email and Password fields to prevent buffer overflow attacks.
+Password Visibility Toggle: Test password visibility toggle feature (if available) to ensure users can see/hide their passwords while typing.
+Copy-Pasting Password: Test if copy-pasting is disabled for the password field as a security measure (optional).
+Enter Key Functionality: Ensure pressing “Enter” on the keyboard after filling out credentials triggers the “Sign In” functionality (for desktop applications).
+Forgot Password Link: Click on “Forgot your password?” and verify if it redirects users to a password recovery page or process.
+Multiple Failed Attempts: Check how system behaves after multiple failed login attempts. It should lock out or delay subsequent attempts for security reasons.
+SSL Certificate Validation: Validate SSL certificate of webpage ensuring data encryption during transmission over the internet.
+CAPTCHA Functionality: Test CAPTCHA functionality (if available) for additional security during login.
+Cross-Browser Compatibility: Check compatibility of login page on different browsers ensuring cross-browser compatibility.
+Mobile Compatibility: Validate responsiveness of login page on various device sizes ensuring mobile compatibility.
+Create Account Redirection: Test ‘Create Account’ button’s redirection functionality, ensuring it takes users to registration page/form.
+Session Timeout: Check session timeout after successful login, ensuring auto logout after period of inactivity for security purposes.
+URL Encryption: Ensure URLs are obscured/encrypted when sensitive information like passwords are being transmitted over the internet.
