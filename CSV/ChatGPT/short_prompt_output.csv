@@ -1,0 +1,21 @@
+Title,Type,Priority,Estimate,Steps,Expected Results,Preconditions
+Valid Login Test,Functional,High,5,Enter a valid email and password; Click 'Sign in',User is logged in successfully,User must be registered with valid credentials
+Invalid Email Format Test,Functional,High,3,Enter an invalid email format; Click 'Sign in',Error message is displayed prompting user for a valid email,None
+Empty Email Field Test,Functional,High,3,Leave the email field empty; Enter a password; Click 'Sign in',Error message is displayed indicating email is required,None
+Empty Password Field Test,Functional,High,3,Enter a valid email; Leave the password field empty; Click 'Sign in',Error message is displayed indicating password is required,Valid email is known
+Empty Fields Test,Functional,High,3,Click 'Sign in' with both fields empty,Error message is displayed indicating both fields are required,None
+SQL Injection Test,Security,High,10,Enter SQL code into the fields; Click 'Sign in',No database error is displayed; User is not logged in,None
+Cross-Site Scripting Test,Security,High,10,Insert a script tag into fields; Click 'Sign in',No script is executed; User is not logged in,None
+Invalid Email Test,Functional,Medium,5,Use an email that isn't registered; Enter a password; Click 'Sign in',Error message is displayed indicating the email is not found,Email used must not be registered
+Invalid Password Test,Functional,High,5,Enter a valid email and incorrect password; Click 'Sign in',Error message is displayed indicating the password is incorrect,Valid email is known
+Maximum Length Test,Functional,Medium,5,Enter values that exceed the fields' max length; Click 'Sign in',Input is either trimmed to max length or error message is displayed,None
+Copy-Paste Functionality Test,Usability,Low,2,Try to copy and paste into the fields,Fields accept the copy-paste action,None
+Password Visibility Toggle Test,Functional,Low,2,If applicable, use the show/hide password feature,Password visibility toggles accordingly,Login page has a password visibility feature
+Browser Back Button Test,Functional,Medium,5,Log in successfully; Press browser back button,User should not be taken back to a logged-in state,User is able to log in
+Forgot Password Link Test,Functional,Medium,3,Click on 'Forgot your password?',User is navigated to the password recovery page,None
+Create Account Link Test,Functional,Medium,3,Click on 'Create account',User is navigated to the registration page,None
+Session Timeout Test,Functional,Medium,10,Log in successfully; Wait for the specified inactivity duration,Session should timeout and user may be prompted to log in again,User is able to log in
+Responsive Design Test,Usability,Medium,8,Open the login page on different devices and resolutions,Page should be correctly displayed and functional on all devices,None
+Login Attempt Limit Test,Security,High,7,Enter incorrect credentials multiple times,Account is locked after specified number of attempts,None
+Keyboard Navigation Test,Accessibility,Medium,5,Navigate and select fields using the keyboard only,User is able to log in using keyboard navigation,None
+Auto-Fill Test,Usability,Low,4,Use browser auto-fill feature,Auto-fill should correctly populate email and password fields,None
