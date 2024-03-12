@@ -1,0 +1,5 @@
+Title;Type;Estimate;Preconditions;Priority;Steps;Expected Results
+Login Test;Functional;30s;User is on the login page;High;1. Enter username\n2. Enter password\n3. Click on login button;User is logged in
+Search Test;Usability;45s;User is logged in;Medium;1. Enter search term in search bar\n2. Click on search button;Search results are displayed
+Compatibility Test;Compatibility;60s;User is using Chrome browser;Low;1. Navigate to website\n2. Click on different links;Website functions correctly without any errors
+Negative Test;Negative;35s;User is on the login page;High;1. Enter incorrect username\n2. Enter incorrect password\n3. Click on login button;Error message is displayed

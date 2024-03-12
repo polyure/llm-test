@@ -1,0 +1,6 @@
+Title;Type;Estimate;Preconditions;Priority;Steps;Expected Results
+Test Case 1;Functional;30s;System is operational;High;1. Start the system, 2. Login with valid credentials, 3. Navigate to the dashboard;User is able to navigate to the dashboard after login
+Test Case 2;Usability;45s;User account is set up;Medium;1. Go to account settings, 2. Try to change password, 3. Save changes;User is able to change their password from account settings
+Test Case 3;Compatibility;30s;App is installed on the device;Low;1. Open the app on a mobile device, 2. Check the layout and responsiveness;App layout is responsive and elements are not overlapping
+...
+Test Case 30;Negative;60s;User is on the login page;High;1. Try to login with invalid credentials, 2. Check the error message;Appropriate error message is displayed for invalid login
