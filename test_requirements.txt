@@ -1,0 +1,78 @@
+The tester is in the "Login" modal after providing the service's URL:
+The "Login" modal conforms to the provided specifications.
+Tests for account creation
+
+"Register" modal
+The tester has not previously created an account for the service and clicks the link: "Create account here."
+The tester is redirected to the "Register" modal, which conforms to the specifications and where they can provide their desired email address and password.
+Existing username
+The tester provides an email address that is already in use.
+The tester receives an error message: "You already have a username" along with a login link to navigate back to the "Login" modal.
+Email validation
+The tester provides only the password and wants to log in to the service.
+Does an error message appear next to the username field: "This is a required field"?
+The tester provides an email address in an incorrect format and receives an error message: "Check email address".
+Does the error message appear immediately or only after clicking the continue button? The tester verifies that the function conforms to the specifications.
+The tester verifies that the "placeholder" in the field remains readable after entering text.
+Password validation
+The tester provides a password that is too short, which the service does not accept, and receives an error message: "Choose a password that is at least 8 characters long".
+The tester enters a password as long as the field allows and checks if the service accepts the provided password.
+The tester checks if the acceptable password includes any additional requirements besides length:
+Uppercase and lowercase letters, numbers, or special characters?
+What level of password complexity is accepted: "weak," "medium," or "strong"?
+The tester provides only the username and wants to log in to the service.
+Does an error message appear next to the password field: "This is a required field"?
+The tester reveals the entered password by pressing the eye icon.
+The tester verifies that the "placeholder" in the field remains readable after entering text.
+"More information" modal
+The tester successfully provides an email address and password and then proceeds to the "More information about you" modal.
+The tester cancels their application and returns to the "Register" modal.
+The tester verifies in the "Register" modal that the previously provided email address is still readable, re-enters the password, and proceeds to the "More information about you" modal.
+Creating a new username
+In the "More information about you" modal, the tester successfully provides the required information and creates a username.
+The tester receives a confirmation email and successfully confirms it.
+The tester verifies that logging into the service with the provided username and password is successful.
+
+Testing logging in across different browsers and devices
+The tester verifies if logging in simultaneously with all supported browsers is successful or if the service notifies that the tester is already logged in.
+The tester tests logging in with devices or by simulating devices.
+
+The appearance of the service's modals on devices
+The tester verifies that the appearance of the modals designed for logging in, creating a new account, changing the password, and providing additional information about yourself on devices complies with the specifications.
+
+Tests for existing account
+The tester wants to log in to the service and is in the "Login" modal.
+Incorrect email or password
+The tester receives an error message "Incorrect email or password" when either the email and/or password is incorrect.
+The tester receives an error message indicating that they have attempted to log in too many times with incorrect information.
+The tester checks what the allowed number of attempts is.
+The tester receives a notification indicating when they can attempt to log in again.
+The tester checks how long the login might be blocked and that they can attempt to log in again afterward.
+Forgot password
+The tester is in the "Login" modal and clicks the link: "Forgot your password?".
+The tester is redirected to the "Forgot your password" modal and proceeds to the "Reset your password" action.
+The tester verifies that they receive a notification in the user interface: "Email sent" and that they receive a notification in their email to choose a new password.
+Account or password expiration
+The tester checks if the account or password can expire if the account is not used for a long time and whether the validity period of the password is otherwise restricted.
+
+Changing email address
+The tester navigates from the provided link REDACTED to their account settings.
+The tester is in the "My Account" modal and proceeds to edit their email address under Account Information.
+The tester provides and confirms their new email address with their password and saves the changes.
+The tester successfully logs into the service with the new email address.
+Testing various error messages
+The tester checks the content and use of error messages in different situations:
+Examples:
+The service is temporarily unavailable for various reasons.
+The service is temporarily down due to reasons beyond the service provider's control.
+Other error situations:
+Links are expired and do not lead anywhere.
+Other tests
+Usability tests:
+The tester ensures that modals and the website are implemented in a way that satisfies users as much as possible.
+Accessibility tests:
+The tester checks:
+Pixel contrast and pixel size used on the site are implemented according to accessibility requirements.
+Screen reader reads the content of the site in the desired order.
+Load tests
+Security tests
