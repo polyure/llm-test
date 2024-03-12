@@ -1,0 +1,32 @@
+Title;Type;Estimate;Preconditions;Priority;Steps;Expected Results
+Verify Login Modal Conformance;functional;60s;User is on the service's URL;High;1. Navigate to the service's URL, 2. Observe the Login modal;The Login modal should conform to the provided specifications
+Test Account Creation Link;usability;45s;User is on the Login modal;Medium;1. Click "Create account here" link;User is redirected to the Register modal
+Check Email Reuse Error;negative;50s;User is on the Register modal;High;1. Enter an already used email, 2. Submit the form;Error "You already have a username" is displayed with a login link
+Email Field Required Validation;functional;40s;User is on the Register modal;High;1. Leave the email field empty, 2. Attempt to proceed;Error "This is a required field" appears next to the email field
+Incorrect Email Format Validation;functional;50s;User is on the Register modal;High;1. Enter an incorrect email format, 2. Submit the form;Error "Check email address" is displayed
+Email Validation Error Timing;usability;70s;User is on the Register modal;Medium;1. Enter an incorrect email, 2. Observe when the error appears;Error should appear immediately or after clicking continue, as specified
+Password Length Validation;functional;60s;User is on the Register modal;High;1. Enter a password shorter than 8 characters, 2. Submit the form;Error "Choose a password that is at least 8 characters long" is displayed
+Acceptance of Long Password;functional;55s;User is on the Register modal;Medium;1. Enter the longest password possible, 2. Submit the form;The service accepts the password
+Password Complexity Check;functional;65s;User is on the Register modal;Medium;1. Enter a simple password, 2. Submit to check complexity requirements;Confirm the level of accepted password complexity: weak, medium, or strong
+Password Field Required Validation;functional;40s;User is on the Register modal;High;1. Leave the password field empty, 2. Attempt to proceed;Error "This is a required field" appears next to the password field
+Password Reveal Functionality;usability;30s;User is on the Register modal;Low;1. Enter a password, 2. Click the eye icon to reveal password;Password is revealed and visible to the user
+Placeholder Visibility After Input;usability;35s;User is on the Register modal;Low;1. Enter text in the email and password fields, 2. Check placeholders;Placeholders remain visible after text entry
+More Information Modal Transition;functional;70s;User has provided valid email and password;High;1. Submit valid login details, 2. Proceed to More Information modal;User reaches the More Information modal successfully
+Cancel Application and Return;usability;50s;User is on More Information modal;Medium;1. Start account creation, 2. Cancel to return to Register modal;Email entered previously is still visible, and user can re-enter password
+Username Creation Confirmation;functional;80s;User has filled in the More Information modal;High;1. Complete the required fields, 2. Finalize account creation;User receives a confirmation email and can confirm the account
+Cross-Browser Login Consistency;compatibility;90s;User has valid login credentials;Medium;1. Attempt to log in with different browsers;Login is successful across all supported browsers without duplicate session errors
+Device Compatibility for Modals;compatibility;120s;User is ready to test modal appearance;Medium;1. Open the service on various devices, 2. Check modals' appearance;Modals appear as specified across different devices
+Incorrect Credentials Error Message;negative;60s;User is on the Login modal;High;1. Enter incorrect email or password, 2. Attempt to log in;Error "Incorrect email or password" is displayed
+Login Attempt Limit Check;security;70s;User is on the Login modal;High;1. Enter incorrect details multiple times;Error indicating too many attempts and lockout time is displayed
+Forgot Password Flow;functional;90s;User is on the Login modal;High;1. Click "Forgot your password?", 2. Follow reset instructions;User receives "Email sent" notification and reset email
+Password Reset Notification;functional;85s;After requesting password reset;Medium;1. Check for email notification, 2. Attempt to reset password;Notification and instructions for password reset are received via email
+Account Expiry Notification;functional;100s;User has an old, unused account;Low;1. Attempt to log in with an old account;Check if there's a notification or process for expired accounts
+Password Expiration Policy;security;110s;User's password is old;Low;1. Log in with an old password, 2. Check for expiration notification;User is notified about password expiration and prompted to change it
+Change Email Address;functional;95s;User wishes to change their email;Medium;1. Navigate to Account settings, 2. Change and save new email;The email address is successfully changed and confirmed
+New Email Login;functional;60s;User has changed their email address;High;1. Log out, 2. Log in with the new email;Login with the new email address is successful
+Service Unavailability Message;negative;30s;Service is down;Low;1. Attempt to access the service;Appropriate service unavailability message is displayed
+Error Message for Down Service;negative;40s;Service experiences an unexpected outage;Low;1. Try using the service;Error message indicating the service is down is displayed
+Link Expiry Notification;functional;50s;User clicks on an expired link;Low;1. Follow an expired link;Notification that the link is expired and is no longer valid
+Usability of Modals;usability;120s;User interacts with various modals;High;1. Navigate through all modals, 2. Assess ease of use;Modals are user-friendly and meet usability standards
+Accessibility Compliance Check;accessibility;130s;Accessibility features need verification;High;1. Review modal designs for accessibility, 2. Use screen reader;Modals comply with accessibility standards, and screen reader reads content correctly
+Performance Under Load;load;180s;System is ready for stress testing;Medium;1. Simulate high user traffic, 2. Monitor system performance;The system maintains functionality and performance under heavy load

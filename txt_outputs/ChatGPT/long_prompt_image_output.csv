@@ -1,0 +1,33 @@
+Title;Type;Estimate;Preconditions;Priority;Steps;Expected Results
+Valid Login;Functional;30s;User has a valid account;High;1. Enter valid email, 2. Enter valid password, 3. Click 'Sign in';User is logged in and redirected to the homepage
+Invalid Email Format;Negative;20s;User is on the login page;Medium;1. Enter invalid email format, 2. Enter any password, 3. Click 'Sign in';Error message for invalid email format is displayed
+Empty Email Field;Negative;20s;User is on the login page;High;1. Leave the email field empty, 2. Enter any password, 3. Click 'Sign in';Error message for required email field is displayed
+Empty Password Field;Negative;20s;User is on the login page;High;1. Enter valid email, 2. Leave the password field empty, 3. Click 'Sign in';Error message for required password field is displayed
+Empty Email and Password Fields;Negative;20s;User is on the login page;High;1. Leave the email field empty, 2. Leave the password field empty, 3. Click 'Sign in';Error message for both fields being required is displayed
+Forgot Password Link;Usability;15s;User is on the login page;Medium;1. Click on 'Forgot your password?';User is redirected to the password recovery page
+Create Account Link;Usability;15s;User is on the login page;Medium;1. Click on 'Create account';User is redirected to the account creation page
+Copy-Paste into Email Field;Usability;20s;User is on the login page;Low;1. Copy a valid email address, 2. Paste it into the email field;Email is pasted into the field correctly
+Copy-Paste into Password Field;Usability;20s;User is on the login page;Low;1. Copy a valid password, 2. Paste it into the password field;Password is pasted into the field and displayed as bullets or asterisks
+Login Button State Without Input;Usability;20s;User is on the login page;Low;1. Observe the 'Sign in' button without entering any data;The 'Sign in' button is disabled or unclickable
+Invalid Password;Negative;30s;User has a valid account;High;1. Enter valid email, 2. Enter incorrect password, 3. Click 'Sign in';Error message for incorrect password is displayed
+Case Sensitive Email;Functional;30s;User has a valid account with case-sensitive email;Medium;1. Enter valid email with different letter casing, 2. Enter valid password, 3. Click 'Sign in';User is logged in and redirected to the homepage or error message for invalid email is displayed
+Case Sensitive Password;Functional;30s;User has a valid account;High;1. Enter valid email, 2. Enter valid password with different letter casing, 3. Click 'Sign in';Error message for incorrect password is displayed
+Sign in Button Active with Input;Usability;15s;User is on the login page;Medium;1. Enter valid email, 2. Enter any password, 3. Observe the 'Sign in' button;The 'Sign in' button is enabled and clickable
+Browser Autofill Functionality;Compatibility;30s;User has saved credentials in the browser;Low;1. Click on the email field, 2. Select the autofill suggestion;The email and password fields are autofilled with saved credentials
+Invalid Email Unregistered;Negative;30s;User is on the login page;High;1. Enter an unregistered email, 2. Enter any password, 3. Click 'Sign in';Error message for unrecognized email or account is displayed
+SQL Injection Attempt;Security;40s;User is on the login page;Critical;1. Enter SQL code snippet into email field, 2.Enter SQL code snippet into password field, 3. Click 'Sign in';Error message for login failure is displayed, and no database error is shown
+JavaScript Code Injection;Security;40s;User is on the login page;Critical;1. Enter JavaScript code snippet into email field, 2. Enter JavaScript code snippet into password field, 3. Click 'Sign in';Error message for login failure is displayed, and the code is not executed
+HTML Code Injection;Security;40s;User is on the login page;Critical;1. Enter HTML code snippet into email field, 2. Enter HTML code snippet into password field, 3. Click 'Sign in';Error message for login failure is displayed, and the code is not rendered
+Cross-Site Scripting (XSS) Attack;Security;40s;User is on the login page;Critical;1. Enter XSS attack vector into email field, 2. Enter XSS attack vector into password field, 3. Click 'Sign in';Error message for login failure is displayed, and no script is executed
+Session Cookie After Login;Functional;40s;User has a valid account;Medium;1. Log in with valid credentials, 2. Check browser for session cookie;A session cookie is present with a secure flag
+Login with Expired Session;Negative;40s;User has a valid account but with expired session;Low;1. Try to log in with a valid account after session expiration, 2. Click 'Sign in';User is prompted to log in again or error message for expired session is displayed
+Remember Me Functionality;Functional;40s;User is on the login page;Medium;1. Enter valid email, 2. Enter valid password, 3. Select 'Remember Me' option if available, 4. Click 'Sign in';User is logged in and credentials are saved for future sessions
+Session Timeout Notification;Usability;50s;User has logged in;Medium;1. Log in with valid credentials, 2. Remain inactive for the session timeout duration;Notification or prompt about session timeout is displayed
+Logout Functionality;Functional;30s;User is logged in;High;1. Click on a 'Logout' option if available;User is logged out and redirected to the login page
+Change Password Link;Usability;20s;User is logged in;Medium;1. Find and click on 'Change Password' link if available;User is redirected to change password page
+Password Visible Toggle;Usability;20s;User is on the login page;Low;1. Enter any password, 2. Click on password visibility toggle if available;Password is shown or hidden on toggle
+Keyboard Navigation;Usability;40s;User is on the login page;Low;1. Use Tab key to navigate through the form fields;Cursor moves through email, password fields, and 'Sign in' button in a logical order
+Form Submission with Enter Key;Usability;30s;User is on the login page;Medium;1. Enter valid email, 2. Enter valid password, 3. Press Enter key;Form is submitted, and user is logged in and redirected to the homepage
+Screen Reader Compatibility;Compatibility;50s;User is on the login page with a screen reader enabled;Low;1. Navigate through login form with screen reader;Screen reader correctly reads the labels and inputs of the form
+Responsive Design on Mobile;Compatibility;40s;User is on the login page on a mobile device;High;1. Observe layout and input fields on a mobile device;Login page is usable and elements are properly aligned on the mobile screen
+Field Focus on Load;Usability;15s;User is on the login page;Medium;1. Observe which field is focused when the page loads;Email field is focused by default on page load
